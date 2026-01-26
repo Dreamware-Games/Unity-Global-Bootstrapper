@@ -2,10 +2,10 @@
 
 A simple example showing how to **bootstrap global game systems in Unity** using Unity’s `RuntimeInitializeOnLoadMethod` to run code **before any scene loads**
 
-This pattern ensures global systems like various managers (game, audio, input, settings etc) are **available everywhere**, regardless of scene.
+This pattern makes sure global systems like various managers (game, audio, input, settings etc) are **available everywhere**, regardless of scene.
 
 Purpose:
-- No “manager scene”
+- No "manager scene"
 - No scene dependencies
 - Predictable initialization order
 
