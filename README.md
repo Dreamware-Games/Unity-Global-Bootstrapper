@@ -1,8 +1,8 @@
 # Unity Global Bootstrapper
 
-A simple example showing how to **bootstrap global game systems in Unity** using Unity’s `RuntimeInitializeOnLoadMethod` to run code **before any scene loads**
+A simple example showing how to **bootstrap scene-independent global game systems in Unity** using Unity’s `RuntimeInitializeOnLoadMethod` to run code **before any scene loads**.
 
-This pattern makes sure global systems like various managers (game, audio, input, settings etc) are **available everywhere**, regardless of scene.
+This pattern makes sure global systems like managers (game, audio, input, settings, etc.) are **available everywhere**, regardless of which scene is active.
 
 Purpose:
 - No "manager scene"
@@ -26,7 +26,6 @@ Purpose:
   - Simple SFX-only global system
   - Scene-agnostic
   - Callable from anywhere via static API
-
 
 ## Pros / Cons
 
