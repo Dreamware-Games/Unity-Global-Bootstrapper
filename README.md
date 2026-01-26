@@ -1,4 +1,4 @@
-# unity-global-bootstrapper
+# Unity Global Bootstrapper
 
 A simple example showing how to **bootstrap global game systems in Unity** using Unity’s `RuntimeInitializeOnLoadMethod` to run code **before any scene loads**
 
