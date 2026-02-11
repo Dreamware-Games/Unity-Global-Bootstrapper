@@ -1,6 +1,6 @@
 # Unity Global Bootstrapper
 
-This project is built with [Unity version 6000.3.0f1](https://unity.com/releases/editor/whats-new/6000.3.0f1)
+This project is built with [Unity version 6000.3.0f1](https://unity.com/releases/editor/whats-new/6000.3.0f1) (Universal 2D Core)
 
 A simple example showing how to **bootstrap scene-independent global game systems in Unity** using Unity’s `RuntimeInitializeOnLoadMethod` to run code **before any scene loads**.
 
