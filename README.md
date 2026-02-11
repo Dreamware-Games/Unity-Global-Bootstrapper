@@ -29,6 +29,12 @@ Purpose:
   - Scene-agnostic
   - Callable from anywhere via static API
 
-## Pros / Cons
+## Pros/Cons
 
-TODO
+**Pros**
+- Globals ready before any scene loads.
+- No need for "manager scene" or scene coupling.
+
+**Cons**
+- Depends on `Resources` loading.
+- Init order can get fragile as the game grows.
