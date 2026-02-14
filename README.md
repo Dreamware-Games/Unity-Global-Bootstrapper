@@ -11,6 +11,8 @@ Purpose:
 - No scene dependencies
 - Predictable initialization order
 
+Feel free to use this however you like!
+
 ## How it works
 
 - **MasterBootstrapper**
