@@ -11,7 +11,12 @@ namespace UI
     public class MenuController : MonoBehaviour
     {
 
-        [SerializeField] private CanvasGroup menuGroup;
+        private CanvasGroup menuCanvasGroup;
+
+        private void Awake()
+        {
+            menuCanvasGroup = GetComponent<CanvasGroup>();
+        }
 
         public void LoadScene(int sceneIndex)
         {
@@ -35,8 +40,8 @@ namespace UI
 
         private IEnumerator ExecuteWithDelay(System.Action action)
         {
-            if (menuGroup != null)
-                menuGroup.interactable = false;
+            if (menuCanvasGroup != null)
+                menuCanvasGroup.interactable = false;
 
             yield return new WaitForSeconds(0.5f);
 

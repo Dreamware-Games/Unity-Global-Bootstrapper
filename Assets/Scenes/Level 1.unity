@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 458675218}
   - component: {fileID: 458675217}
+  - component: {fileID: 458675220}
   - component: {fileID: 458675216}
   - component: {fileID: 458675215}
   - component: {fileID: 458675219}
@@ -372,6 +373,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3fc7ad7abb67c48ad51b6a9b7f52f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.MainMenuController
+--- !u!225 &458675220
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458675214}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &482716346
 GameObject:
   m_ObjectHideFlags: 0
