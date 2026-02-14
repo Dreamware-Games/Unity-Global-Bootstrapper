@@ -27,6 +27,8 @@ namespace Audio
                 return;
             }
             Instance = this;
+            // DontDestroyOnLoad isn't really neccessary here, since class is bootstrapped
+            // It just reinforces persistence if instantiated outside the bootstrap flow
             DontDestroyOnLoad(gameObject);
             CacheAudioSources();
         }

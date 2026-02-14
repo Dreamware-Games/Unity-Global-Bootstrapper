@@ -23,6 +23,7 @@ namespace Bootstrap
             }
 
             T instance = Object.Instantiate(prefab);
+            // Ensure bootstrapped singleton persists across scene loads
             Object.DontDestroyOnLoad(instance.gameObject);
         }
     }
