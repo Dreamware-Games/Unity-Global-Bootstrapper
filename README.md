@@ -13,6 +13,11 @@ Purpose:
 
 Feel free to use this however you like!
 
+UI audio clips used here are courtesy of [Neon Strike](https://store.steampowered.com/app/3685030/Neon_Strike/).
+
+[![Neon Strike](https://github.com/Dreamware-Games/.github/blob/master/images/Neon%20Strike%20Steam%20Promo.png)](https://store.steampowered.com/app/3685030/Neon_Strike/)
+
+
 ## How it works
 
 - **MasterBootstrapper**
