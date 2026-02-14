@@ -46,10 +46,19 @@ namespace Audio
 
         public void PlayUIClip(AudioClip clip)
         {
-            if (clip == null || uiOneShotters.Count == 0)
+            if (clip == null)
+            {
+                Debug.LogWarning("PlayUIClip called with null AudioClip");
                 return;
+            }
+            if (uiOneShotters.Count == 0)
+            {
+                Debug.LogWarning("No UI AudioSources configured for AudioManager");
+                return;
+            }
             currentIndex = (currentIndex + 1) % uiOneShotters.Count;
             uiOneShotters[currentIndex].PlayOneShot(clip);
         }
+
     }
 }

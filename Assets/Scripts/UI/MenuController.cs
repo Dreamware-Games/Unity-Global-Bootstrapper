@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,18 +10,38 @@ namespace UI
     /// </summary>
     public class MenuController : MonoBehaviour
     {
+
+        [SerializeField] private CanvasGroup menuGroup;
+
         public void LoadScene(int sceneIndex)
         {
-            SceneManager.LoadScene(sceneIndex);
+            StartCoroutine(ExecuteWithDelay(() =>
+            {
+                SceneManager.LoadScene(sceneIndex);
+            }));
         }
 
         public void QuitGame()
         {
+            StartCoroutine(ExecuteWithDelay(() =>
+            {
 #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
+                UnityEditor.EditorApplication.isPlaying = false;
 #else
-            Application.Quit();
+                Application.Quit();
 #endif
+            }));
         }
+
+        private IEnumerator ExecuteWithDelay(System.Action action)
+        {
+            if (menuGroup != null)
+                menuGroup.interactable = false;
+
+            yield return new WaitForSeconds(0.5f);
+
+            action?.Invoke();
+        }
+
     }
 }
