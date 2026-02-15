@@ -14,17 +14,16 @@ namespace Bootstrap
             T existing = Object.FindAnyObjectByType<T>();
             if (existing != null)
                 return;
-
             T prefab = Resources.Load<T>(resourcesPath);
             if (prefab == null)
             {
                 Debug.LogError($"{typeof(T).Name} prefab missing at Resources/{resourcesPath}");
                 return;
             }
-
             T instance = Object.Instantiate(prefab);
             // Ensure bootstrapped singleton persists across scene loads
             Object.DontDestroyOnLoad(instance.gameObject);
         }
+
     }
 }
