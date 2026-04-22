@@ -1,6 +1,6 @@
 # Unity Global Bootstrapper
 
-This project is built with [Unity version 6000.3.0f1](https://unity.com/releases/editor/whats-new/6000.3.0f1) (Universal 2D Core)
+This project is built with [Unity version 6000.4.3f1](https://unity.com/releases/editor/whats-new/6000.4.3f1) (Universal 2D Core)
 
 Check out a short [walkthrough on YouTube](https://www.youtube.com/watch?v=nxF8CvFj9aE).
 
